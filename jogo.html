@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> 
+
+		<title>Estourando balões</title>
+		<link rel="stylesheet" href="style.css">
+
+		<script src="jogo.js"></script>
+
+	</head>
+
+	<body class="bg-jogo" onload="iniciaJogo()">
+		<div class="painel-baloes">
+			<table>
+				<tr>
+					<td>
+						<img class="balao" src="imagens/balao_azul_grande.png" alt="">
+					</td>
+					<td>
+						<span class="baloes-fonte" id="baloes_inteiros"></span>
+					</td>
+				</tr>
+			</table>
+			<br />
+			<table>
+				<tr>
+					<td>
+						<img class="balao" src="imagens/balao_azul_grande_estourado.png" alt="">
+					</td>
+					<td>
+						<span class="baloes-fonte" id="baloes_estourados"></span>
+					</td>
+				</tr>
+			</table>
+			<br />
+			<table class="cronometro">
+				<tr>
+					<td style="background:url('imagens/cronometro.png'); text-align: center;">
+						 <span class="cronometro-fonte" id="cronometro"></span>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class="cenario" id="cenario">
+
+		</div>
+
+		<div>
+			<button class="sair" type="button">
+				<a class="fonte-sair" href="index.html">SAIR</a>
+			</button>
+		</div>
+
+	</body>
+	
+</html>

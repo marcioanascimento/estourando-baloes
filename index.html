@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+
+		<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> 
+
+		<title>Estourando balões</title>
+		<link rel="stylesheet" href="style.css">
+
+		<script language='Javascript'>
+
+			function iniciarJogo(){
+			
+			//a variável nível jogo (id do select) vai recuperar o valor do elemento
+				var nivel_jogo = document.getElementById('nivel_jogo').value;
+
+				window.location.href = 'jogo.html?'+nivel_jogo;
+
+			}
+			
+		</script>
+	</head>
+
+	<body class="background">		
+		<div class="container">
+			<h1>Estourando Balões</h1>
+			<div class="box">
+				<span class="nivel"> Nível: </span>
+					<select class="select-nivel" id="nivel_jogo">
+						<option value="1">Fácil</option>
+						<option value="2">Médio</option>
+						<option value="3">Difícil</option>
+					</select>								
+			</div>
+			<span class="iniciar">INICIAR</span><br />
+			<img id="btn-start" src="imagens/iniciar.png" onclick="iniciarJogo()" /> <!--Aqui eu recupero a função iniciarJogo para capturar a seleção-->
+		</div>
+	</body>	
+</html>
